@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #main{
+            width: 100%;
+            height: 1000px;
+        }
+        html{
+            font-family: "Lato", sans-serif;
+        }
+        #div-all{
+            width: 100%;
+            height: 1000px;
+        }
+        /*div trên*/
+        #div-space-top{
+            width: 100%;
+            height: 75px;
+        }
+        #div-top{
+            width: 100%;
+            height: 75px;
+            position: fixed;
+        }
+        #div-top > .left{
+            width: 10%;
+            height: 100%;
+            float: left;
+            text-align:center;
+            background: linear-gradient(135deg, #55efcb 0%, #1e5799 0%, #55efcb 0%, #5bcaff 100%);
+            color: white;
+        }
+        #div-top > .right{
+            width: 90%;
+            height: 100%;
+            float: left;
+            line-height: 100px;
+            background-color: lightgrey;
+            padding-left: 10px;
+            box-shadow: 0 5px 20px -5px #333;
+            text-align: center;
+        }
+
+        /*div dưới*/
+        #div-bot{
+            width: 100%;
+            height: 100%;
+        }
+        #div-space-bot-left{
+            width: 10%;
+            height: 100%;
+            float: left;
+        }
+        #div-bot > .left{
+            width: 10%;
+            height: 100%;
+            position: fixed;
+            text-align: center;
+            box-shadow: 0 6px 20px 0 gray;
+            background-color: lightgrey;
+        } 
+
+        #div-bot > .left > .top{
+            width: 100%;
+            height: 72%;
+        }
+        #div-bot > .left > .bot{
+            width: 100%;
+            height: 28%;
+        }        
+        /*hiệu ứng tý*/
+        .text-bot-left p{
+            padding: 20px 0;
+            position: relative;
+        }
+/*        .text-bot-left:hover{
+            background-color: darkgrey;
+        }*/
+
+        .text-bot-left p::before {  
+          transform: scaleX(0);
+          transform-origin: bottom right;
+      }
+
+      .text-bot-left p:hover::before {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+      }
+
+      .text-bot-left p::before {
+          content: " ";
+          display: block;
+          position: absolute;
+          top: 0; right: 0; bottom: 0; left: 0;
+          inset: 0 0 0 0;
+          background:white;
+          z-index: -1;
+          transition: transform .3s ease;
+      }
+
+      #div-bot > .right{
+        width: 90%;
+        height: 100%;
+        float: left;
+        background: linear-gradient(135deg, #55efcb 0%, #1e5799 0%, #55efcb 0%, #5bcaff 100%);    } 
+    #div-bot > .right > .left{
+        width: 80%;
+        height: 100%;
+        float: right;
+    }
+    .box-space-bot-right-right{
+        width: 20%;
+        height: 100%;
+        float: right;
+    }
+    #div-bot > .right > .right{
+        width: 20%;
+        height: 100%;
+        float: right;
+        text-align: center  ;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        color: #f7f7f7;
+        font-family: "Lato", sans-serif;
+        font-weight: 300;
+        position: fixed;
+        right: 0;
+    }
+    .button {
+      flex: 1 1 auto;
+      margin: 10px;
+      padding: 20px;
+      border: 2px solid #f7f7f7;
+      text-align: center;
+      text-transform: uppercase;
+      overflow: hidden;
+      transition: 0.3s;
+  }
+  .button:after {
+      transition: 0.3s;
+      content: "";
+      width: 0;
+      left: 50%;
+      bottom: 0;
+      height: 3px;
+      background: #f7f7f7;
+  }
+  .button:hover {
+      cursor: pointer;
+  }
+  .button:hover:after {
+      width: 100%;
+      left: 0;
+  }
+
+  .blink:hover {
+      border-radius: 30px;
+  }
+  .blink:hover:after {
+      width: 0%;
+  }
+
+</style>
+</head>
+<body>
+    <div id="div-all">
+        <div id="div-top">
+            <div class="left">
+                <h1>ADMIN</h1>
+            </div>
+            <div class="right">
+                <a href="">
+                    <img src="">LOGO + Tên Shop
+                </a>
+            </div>
+        </div>
+        <div id="div-space-top"></div>
+        <div id="div-bot">
+            <div id="div-space-bot-left"></div>
+            <div class="left">
+                <div class="top">
+                    <ul type="none">
+                        <li class="text-bot-left"><p>NHÂN VIÊN</p></li>
+                        <li class="text-bot-left"><p>SẢN PHẨM</p></li>
+                        <li class="text-bot-left"><p>NHÀ SẢN XUẤT</p></li>
+                    </ul>
+                </div>
+                <div class="bot">
+                    <ul type="none">
+                        <li class="text-bot-left"><p>SETTING</p></li>
+                        <li class="text-bot-left"><p>TIN NHĂN</p></li>
+                        <li class="text-bot-left"><p>ACCOUNT</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right">
+                    <div class="button blink">
+                        THÊM
+                    </div>
+                    <div class="button blink">
+                        SỬA
+                    </div>
+                    <div class="button blink">
+                        XÓA
+                    </div>
+                </div>
+                <div class="box-space-bot-right-right"></div>
+                <div class="left">
+                    <h1 style="padding: 10px; color: white;">
+                        THÔNG TIN CHI TIẾT Ở ĐÂY
+                    </h1>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+</html>

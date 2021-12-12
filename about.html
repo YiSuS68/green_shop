@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Green Shop</title>
+</head>
+<body>
+    
+    <div id="main">
+        <!-- navbar onTop -->
+        <div class="d-none position-rel p_t-b items-center setup992" id="navbar"> 
+            <div class="container grey">
+                <div class="space-flex">
+                    <div class="p_t">
+                        <i class="m_l-r fas fa-envelope"></i>
+                        <a class="n-decoration grey" href="mailto:">info@company.com</a>
+                        <i class="m_l-r fas fa-phone"></i>
+                        <a class="n-decoration grey" href="callto:">010-020-0304</a>
+                    </div>
+                    <div>
+                        <!--click vào thì có hiện ra (hoặc có thể mở ra blank mới) để đăng nhập hoặc đăng ký-->
+                        <p><a class="hover n-decoration grey" href="#">Đăng Nhập</a> / <a a class="hover n-decoration grey" href="#">Đăng Ký</a></p>
+                        <a class="n-decoration grey" href="https://www.facebook.com" target="_blank">
+                            <i class="navbar-icon m_r w fab fa-facebook-f"></i>
+                        </a>
+                        <a class="n-decoration grey" href="https://www.instagram.com" target="_blank">
+                            <i class="navbar-icon m_r w fab fa-instagram"></i>
+                        </a>
+                        <a class="n-decoration grey" href="https://twitter.com" target="_blank">
+                            <i class="navbar-icon m_r w fab fa-twitter"></i>
+                        </a>
+                        <a class="n-decoration grey" href="https://www.linkedin.com" target="_blank">
+                            <i class="navbar-icon m_r w fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- navbar directional -->
+        <div class="position-rel space-flex-wrap p_t-b items-center setup992" id="header-navbar">   
+            <div class="items-center space-flex container flex-inhe">
+                <a class="m_r2 m_b items-center n-decoration" id="logo" href="./index.html">Green Shop</a>
+                <i class="fas fa-bars" id="btn"></i>
+                <div class="header-setup all-center" id="collapse_btn">
+                    <div class="flex-auto">
+                        <ul class="header-click space-flex-wrap">
+                            <li><a class="hover dark n-decoration p d-block" href="./index.html">Home</a></li>
+                            <li><a class="hover dark n-decoration p d-block" href="./about.html">About</a></li>
+                            <li><a class="hover dark n-decoration p d-block" href="./shop.html">Shop</a></li>
+                            <li><a class="hover dark n-decoration p d-block" href="./contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-all p_t-b space-flex-wrap position-rel items-center text-center">
+                        <div class="header-search m_t2 m_b4">
+                            <div class="header-input">
+                                <input type="text" class="search-time black" id="inputMobileSearch" placeholder="Search...">
+                                <div class="search-icon black">
+                                    <i class="search w20 fas fa-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="unsee m_r3" href="#"><i class="w20 black fas fa-search"></i></a>
+                        <!-- Thêm popup bên trên icon với backend -->
+                        <a class="m_r3" href="#"><i class="w20 black fas fa-cart-arrow-down"></i><span class="pop black">7</span></a>
+                        <!-- Thêm popup bên trên icon với backend -->
+                        <a class="m_r3" href="#"><i class="w20 black fas fa-user"></i><span class="pop black">+99</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+        <!-- About Us -->
+        <div id="US">
+            <div class="containers">
+                <div class="p_t-b5 flex-wrap items-center">
+                    <div class="US-flex white p_l-r">
+                        <h1 class="m_b">About Us</h1>
+                        <p class="m_b2">Chúng tôi quan tâm đến khách hàng <b>Green Shop</b> chúng tôi không đơn thuần là cái đẹp 
+                            thời trang, chúng tôi khao khát kiến tạo những giá trị xã hội nhân văn, trở thành một lối sống để đồng hành 
+                            cùng bạn trên hành trình thấu cảm vẻ đẹp của chính mình.
+                            <br>
+                            <b>Green Shop</b> là kênh mua sắm online uy tín hàng đầu, cùng với đội ngũ nhân viên chuyên nghiệp, chúng tôi cam kết
+                             đem những sản phẩm tốt nhất, với giá cả phải chăng, uy tín và chất lượng với dịch vụ tốt nhất đến với mọi người</p>
+                    </div>
+                    <div class="US-flex-photo media-w100 p_l-r">
+                        <img src="./assets/img/about-hero.svg" alt=" " class="US-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Our Services -->
+        <div class="containers" id="services">
+            <div class="p_t5 p_b2 flex-wrap text-center">
+                <div class="services-about flex-width p_l-r">
+                    <h1 class="h1 m_b">dịch vụ của chúng tôi</h1>
+                    <p class="m_b2">Giá cả phù hợp, tư vấn nhiệt tình. Giao hàng nhanh chóng. Hậu mãi chu đáo. Nhiều chương trình khuyến mãi hấp dẫn.</p>
+                </div>
+            </div>
+            <div class="flex-wrap">
+                <div class="services-card flex-width768 media-w100">
+                    <div class="services-css">
+                        <div class="m_b text-center green h1 hover-w">
+                            <i class="services-emote fas fa-truck"></i>
+                        </div>
+                        <h2 class="h5 text-center m_b m_t4">Dịch vụ giao hàng</h2>
+                    </div>
+                </div>
+                <div class="services-card flex-width768 media-w100">
+                    <div class="services-css">
+                        <div class="m_b text-center green h1 hover-w">
+                            <i class="services-emote fas fa-exchange-alt"></i>
+                        </div>
+                        <h2 class="h5 text-center m_b m_t4">vận chuyển và hoàn trả</h2>
+                    </div>
+                </div>
+                <div class="services-card flex-width768 media-w100">
+                    <div class="services-css">
+                        <div class="m_b text-center green h1 hover-w">
+                            <i class="services-emote fas fa-percent"></i>
+                        </div>
+                        <h2 class="h5 text-center m_b m_t4">Khuyến mãi</h2>
+                    </div>
+                </div>
+                <div class="services-card flex-width768 media-w100">
+                    <div class="services-css">
+                        <div class="m_b text-center green h1 hover-w">
+                            <i class="services-emote fas fa-user"></i>
+                        </div>
+                        <h2 class="h5 text-center m_b m_t4">Dịch vụ 24/24h</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Our brand -->
+        <div id="brand">
+            <div class="containers m_t4 m_b4">
+                <div class="flex-wrap p_t-b2 text-center">
+                    <div class="brand-about flex-width p_l-r media-w100">
+                        <h1 class="h1 m_b">Nhãn hiệu của chúng tôi</h1>
+                        <p class="m_b2">các nhãn hiệu nổi tiếng như nike, adidas, H&M, levi's, ...</p>
+                    </div>
+                    <div class="brand-slider p_l-r">
+                        <div class="brand-btn flex-wrap">
+                            <!-- prev button -->
+                            <div class="brand-prev p_l-r self-center">
+                                <a class="black m_b h1" role="button" onclick="minisize(-1)"><i class="light fas fa-chevron-left"></i></a>
+                            </div>
+                            
+                            <!-- slider brand -->
+                            <div class="brand-icon p_l-r">
+                                <div class="position-rel">
+                                    <div class="position-rel w-100">
+                                        <div class="brand-picture position-rel">
+                                            <div class="flex-wrap">
+                                                <div class="brand-logo_brand"><a href="#"><img class="brand-img" src="./assets/img/brand_01.png" width="110px" height="74px"></a></div>
+                                                <div class="brand-logo_brand"><a href="#"><img class="brand-img" src="./assets/img/brand_02.png" width="110px" height="74px"></a></div>
+                                                <div class="brand-logo_brand"><a href="#"><img class="brand-img" src="./assets/img/brand_03.png" width="110px" height="74px"></a></div>
+                                                <div class="brand-logo_brand"><a href="#"><img class="brand-img" src="./assets/img/brand_04.png" width="110px" height="74px"></a></div>
+                                            </div>
+                                        </div>
+                                        <div class="brand-picture position-rel">
+                                            <div class="flex-wrap">
+                                                <div class="brand-logo_brand"><a href="#"><img class="brand-img" src="./assets/img/brand_01.png" width="110px" height="74px"></a></div>
+                                                <div class="brand-logo_brand"><a href="#"><img class="brand-img" src="./assets/img/brand_02.png" width="110px" height="74px"></a></div>
+                                                <div class="brand-logo_brand"><a href="#"><img class="brand-img" src="./assets/img/brand_03.png" width="110px" height="74px"></a></div>
+                                                <div class="brand-logo_brand"><a href="#"><img class="brand-img" src="./assets/img/brand_04.png" width="110px" height="74px"></a></div>
+                                            </div>
+                                        </div>
+                                        <div class="brand-picture position-rel">
+                                            <div class="flex-wrap">
+                                                <div class="brand-logo_brand"><a href="#"><img class="brand-img" src="./assets/img/brand_01.png" width="110px" height="74px"></a></div>
+                                                <div class="brand-logo_brand"><a href="#"><img class="brand-img" src="./assets/img/brand_02.png" width="110px" height="74px"></a></div>
+                                                <div class="brand-logo_brand"><a href="#"><img class="brand-img" src="./assets/img/brand_03.png" width="110px" height="74px"></a></div>
+                                                <div class="brand-logo_brand"><a href="#"><img class="brand-img" src="./assets/img/brand_04.png" width="110px" height="74px"></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- next button -->
+                            <div class="brand-prev p_l-r self-center">
+                                <a class="black m_b h1" role="button" onclick="minisize(1)"><i class="light fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div id="footer"> 
+            <div class="containers">
+                <div class="flex-wrap">
+                    <div class="footer-card">
+                        <h2 class="footer-logo b_b green h2 p_b2 m_b">Green Shop</h2>
+                        <ul class="light m_b2 n-list_style">
+                            <li class="footer-inline"><i class="w fas fa-map-marker-alt"></i><a class="light n-decoration" href="https://www.google.com/maps/place/96+P.+%C3%94+Ch%E1%BB%A3+D%E1%BB%ABa,+Ch%E1%BB%A3+D%E1%BB%ABa,+%C4%90%E1%BB%91ng+%C4%90a,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@21.0195498,105.8251211,17z/data=!4m13!1m7!3m6!1s0x3135ab7841103fd3:0x68b658822cd76f94!2zOTYgUC4gw5QgQ2jhu6MgROG7q2EsIENo4bujIEThu6thLCDEkOG7kW5nIMSQYSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!3b1!8m2!3d21.0195498!4d105.8273098!3m4!1s0x3135ab7841103fd3:0x68b658822cd76f94!8m2!3d21.0195498!4d105.8273098?hl=vi-VN" target="_blank"> 96 Phố Ô Chợ Dừa, Đống Đa, Hà Nội, Việt Nam</a></li>
+                            <li class="footer-inline"><i class="w fas fa-phone"></i><a class="light n-decoration" href="callto:"> 010-020-0340</a></li>
+                            <li class="footer-inline"><i class="w fas fa-envelope"></i><a class="light n-decoration" href="mailto:"> info@company.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-card">
+                        <h2 class="b_b h2 light p_b2 m_b">Các sản phẩm</h2>
+                        <ul class="light m_b2 n-list_style">
+                            <li class="footer-inline"><a class="n-decoration light" href="./shop.html">sang trọng</a></li>
+                            <li class="footer-inline"><a class="n-decoration light" href="./shop.html">đồ thể thao</a></li>
+                            <li class="footer-inline"><a class="n-decoration light" href="./shop.html">giày nam</a></li>
+                            <li class="footer-inline"><a class="n-decoration light" href="./shop.html">giày nữ</a></li>
+                            <li class="footer-inline"><a class="n-decoration light" href="./shop.html">váy phổ biến</a></li>
+                            <li class="footer-inline"><a class="n-decoration light" href="./shop.html">phụ kiện dụng cụ thể hình</a></li>
+                            <li class="footer-inline"><a class="n-decoration light" href="./shop.html">giày thể thao</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-card">
+                        <h2 class="b_b h2 light p_b2 m_b">thông tin thêm</h2>
+                        <ul class="light m_b2 n-list_style">
+                            <li class="footer-inline"><a class="n-decoration light" href="#">Home</a></li>
+                            <li class="footer-inline"><a class="n-decoration light" href="./about.html">About Us</a></li>
+                            <li class="footer-inline"><a class="n-decoration light" href="./contact.html">Shop Locations</a></li>
+                            <li class="footer-inline"><a class="n-decoration light" href="#">FAQs</a></li>
+                            <li class="footer-inline"><a class="n-decoration light" href="./contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-second flex-wrap light">
+                    <div class="footer-rule">
+                        <div class="rule"></div>
+                    </div>
+                    <div class="footer-icon">
+                        <ul class="n-list_style m_b2">
+                            <li class="footer-setup_icon text-center">
+                                <a class="n-decoration light text-center" href="https://www.facebook.com" target="_blank"><i class="icon w fab fa-facebook-f"></i></a></li>
+                            <li class="footer-setup_icon text-center">
+                                <a class="n-decoration light text-center" href="https://www.instagram.com" target="_blank"><i class="icon w fab fa-instagram"></i></a></li>
+                            <li class="footer-setup_icon text-center">                        
+                                <a class="n-decoration light text-center" href="https://twitter.com" target="_blank"><i class="icon w fab fa-twitter"></i></a></li>
+                            <li class="footer-setup_icon text-center">
+                                <a class="n-decoration light text-center" href="https://www.linkedin.com" target="_blank"><i class="icon w fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-search">
+                        <lablel class="footer-label" for="Hellodue">Email</lablel>
+                        <div class="footer-input">
+                            <input type="email" class="form-control" id="Hellodue" placeholder="email">
+                            <button type="submit"class="footer-subscribe">subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
